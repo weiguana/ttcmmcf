@@ -1,4 +1,5 @@
 
+import { _ } from 'meteor/underscore';
 import { Roles } from 'meteor/nicolaslopezj:roles';
 import { RouterLayer } from 'meteor/nicolaslopezj:router-layer';
 

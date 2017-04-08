@@ -1,13 +1,13 @@
-# Scorpius Collections
+# ttcmmcf Collections
 
-![Scorpius][1]
+![ttcmmcf][1]
 
 ## Overview
-Core Collections package for the Scorpius framework.
+Core Collections package for the ttcmmcf framework.
 
 ## Documentation
 > Coming Soon
 
-[1]: https://raw.githubusercontent.com/scorpiusjs/graphics/master/logos/scorpiusjs-logo.png
+[1]: https://raw.githubusercontent.com/ttcmmcfjs/graphics/master/logos/ttcmmcfjs-logo.png
 
 

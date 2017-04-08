@@ -1,24 +1,25 @@
 Package.describe({
-  name: 'ttcmmcf:lang-zh',
-  version: '0.0.1',
-  // Brief, one-line summary of the package.
-  summary: '',
-  // URL to the Git repository containing the source code for this package.
-  git: '',
-  // By default, Meteor will default to using README.md for documentation.
-  // To avoid submitting documentation, set this field to null.
-  documentation: 'README.md'
+    name: 'ttcmmcf:lang-zh',
+    version: '0.0.1',
+    summary: '',
+    git: '',
+    documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.4.3.2');
-  api.use('ecmascript');
-  api.mainModule('lang-zh.js');
+    api.versionsFrom('1.4.3.2');
+
+    api.use('ecmascript');
+    api.use('ttcmmcf:lang-en@0.0.1');
+
+    api.imply('ttcmmcf:lang-en');
+
+    api.addFiles('messages-zh.js');
 });
 
 Package.onTest(function(api) {
-  api.use('ecmascript');
-  api.use('tinytest');
-  api.use('ttcmmcf:lang-zh');
-  api.mainModule('lang-zh-tests.js');
+    api.use('ecmascript');
+    api.use('tinytest');
+    api.use('ttcmmcf:lang-zh');
+    api.addFiles('lang-zh-tests.js');
 });

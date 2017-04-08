@@ -1,4 +1,6 @@
 
+import { check } from 'meteor/check';
+
 ttcmmcf.collections.list = {};
 
 /**

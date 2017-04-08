@@ -1,0 +1,11 @@
+<template name="ttcmmcfBootstrapPagesIndex">
+    {{# Layout template="ttcmmcfBootstrapMediumContentOffset" }}
+        {{# Layout template="ttcmmcfBootstrapTitle" }}
+            {{ i18n 'pages.index.title' }}
+            <a href="{{ RouterLayerPathFor 'pages.create' }}" class="btn btn-default btn-xs"><i class="fa fa-plus"></i></a>
+        {{/ Layout }}
+        {{# Layout template="ttcmmcfBootstrapContentContainer" }}
+            {{> tabular table=tabularTable class="table index-table" id="ttcmmcf_pages_index" }}
+        {{/ Layout }}
+    {{/ Layout }}
+</template>

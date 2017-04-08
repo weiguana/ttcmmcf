@@ -1,0 +1,22 @@
+<template name="ttcmmcfBootstrapDictionaryUpdate">
+    {{# Layout template="ttcmmcfBootstrapSmallContentOffset" }}
+        {{# Layout template="ttcmmcfBootstrapTitle" }}
+            {{ i18n 'dictionary.update.title' }}
+        {{/ Layout }}
+        {{# Layout template="ttcmmcfBootstrapContentContainer" }}
+            <p>
+                {{> reactiveTemplate template="tabs" data=getDataForTabs }}
+            </p>
+            <hr>
+            {{# autoForm collection="ttcmmcf.dictionary" id="updateDictionaryForm" type="update" doc=getDoc }}
+                {{# if currentCategory }}
+                    {{> afQuickFields name=currentCategory }}
+                {{/ if }}
+                <br>
+                <div class="text-right">
+                    <button class="btn btn-primary">{{ i18n 'global.save' }}</button>
+                </div>
+            {{/ autoForm }}
+        {{/ Layout }}
+    {{/ Layout }}
+</template>

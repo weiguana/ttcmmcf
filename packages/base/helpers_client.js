@@ -1,3 +1,4 @@
+
 /**
  * Return the base64 representation of the image
  */

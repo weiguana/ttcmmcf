@@ -2,10 +2,6 @@
 
 import { Options } from 'meteor/nicolaslopezj:options';
 
-// Variables exported by this module can be imported by other packages and
-// applications. See collections-tests.js for an example of importing.
-export const name = 'collections';
-
 /**
  * Init the entities variable
  */
@@ -27,3 +23,6 @@ Options.init('collectionsDefaultCreateTemplate');
 Options.init('collectionsDefaultUpdateTemplate');
 Options.init('collectionsDefaultDeleteTemplate');
 
+// Variables exported by this module can be imported by other packages and
+// applications. See collections-tests.js for an example of importing.
+export const name = 'collections';

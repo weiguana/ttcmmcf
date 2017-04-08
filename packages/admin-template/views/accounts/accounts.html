@@ -1,0 +1,14 @@
+<template name="ttcmmcfBootstrapAccountsIndex">
+    {{# Layout template="ttcmmcfBootstrapSmallContentOffset" }}
+        {{# Layout template="ttcmmcfBootstrapTitle" }}
+            {{ i18n 'accounts.index.title' }}
+            {{# if userHasPermission 'accounts.showCreate' }}
+                <a href="{{ RouterLayerPathFor 'accounts.create' }}" class="btn btn-default btn-xs"><i class="fa fa-plus"></i></a>
+            {{/ if }}
+        {{/ Layout }}
+
+        {{# Layout template="ttcmmcfBootstrapContentContainer" }}
+            {{> tabular table=table class="table index-table" id="ttcmmcf_accounts_index" }}
+        {{/ Layout }}
+    {{/ Layout }}
+</template>

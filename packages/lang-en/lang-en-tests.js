@@ -1,7 +1,7 @@
 // Import Tinytest from the tinytest Meteor package.
 import { Tinytest } from "meteor/tinytest";
 
-// Import and rename a variable exported by lang-en.js.
+// Import and rename a variable exported by lang-messages-en.js.
 import { name as packageName } from "meteor/ttcmmcf:lang-en";
 
 // Write your tests here!

@@ -26,7 +26,7 @@ Package.onUse(function(api) {
         'ttcmmcf:lang-en',
         'ttcmmcf:lang-zh',
         'ttcmmcf:base',
-        'ttcmmcf:accounts',
+        'ttcmmcf:authc',
         'ttcmmcf:config',
         'ttcmmcf:collections',
         'ttcmmcf:dictionary',

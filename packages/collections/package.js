@@ -28,8 +28,7 @@ Package.onUse(function(api) {
     api.addFiles([
         'collections.js',
         'new.js',
-        'permissions.js',
-        'admin.js',
+        'permissions.js'
     ]);
 
     api.addFiles([

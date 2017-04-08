@@ -17,6 +17,7 @@ Package.onUse(function(api) {
         'check',
         'tracker',
         'session',
+        'anti:i18n@0.4.3',
         'spacebars@1.0.13',
         'blaze-html-templates@1.0.5',
         'nicolaslopezj:options@1.0.1',
@@ -61,5 +62,5 @@ Package.onTest(function(api) {
     api.use('ecmascript');
     api.use('tinytest');
     api.use('ttcmmcf:base');
-    api.mainModule('base-tests.js');
+    api.addFiles('base-tests.js');
 });
