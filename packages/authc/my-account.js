@@ -90,21 +90,6 @@ if (Meteor.isClient) {
         });
     });
 
-    AccountsTemplates.configure({
-        onSubmitHook: function(error, state) {
-            if (state === 'changePwd') {
-                RouterLayer.go('admin')
-            }
-        },
-        onLogoutHook: function() {
-            const ref = RouterLayer.pathFor('admin.login');
-            if (ref.indexOf('http') > -1) {
-                Session.set('ttcmmcf_isRedirecting', true);
-            }
-            window.location.replace(ref);
-        }
-    });
-
     ReactiveTemplates.events('myAccount.index', {
         'click .logout': function() {
             // return Meteor.logout();

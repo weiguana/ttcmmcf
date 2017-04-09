@@ -2,6 +2,7 @@
   <dictionary name="weiguan">
     <words>
       <w>aldeed</w>
+      <w>autoform</w>
       <w>autopublish</w>
       <w>dburles</w>
       <w>ecmascript</w>
@@ -12,6 +13,7 @@
       <w>tcmmcf</w>
       <w>tinytest</w>
       <w>ttcmmcf</w>
+      <w>useraccounts</w>
     </words>
   </dictionary>
 </component>
