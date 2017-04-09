@@ -13,8 +13,12 @@ if (Meteor.isClient) {
     detectLanguage = function() {
         let language = window.navigator.userLanguage || window.navigator.language;
         // language = language.split('-')[0];
-        if (language.indexOf('-') < 0) {
-            language = language + '-'
+        // if (language.indexOf('-') < 0) {
+        //     language = language + '-'
+        // }
+        const languages = language.split('-');
+        if (languages[0] === 'zh') {
+            language = languages[0] + '-' + languages[1].toUpperCase() + '-' + 'null';
         }
         i18n.setLanguage(language);
         T9n.setLanguage(language);
